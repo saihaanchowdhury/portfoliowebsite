@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+}
+
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header img {
+  width: 100px;
+}
+
+header {
+  padding: 1vh 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: skyblue;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.home {
+  min-height: 80vh;
+  padding: 40px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.hero {
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero p,
+.contact-preview p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.aboutme {
+  margin-bottom: 60px;
+}
+
+.aboutme h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.aboutme p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-preview {
+  padding: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: black;
+  color: skyblue;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: skyblue;
+  color: black;
+  text-decoration: none;
+}
