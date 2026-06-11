@@ -1,0 +1,112 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <title>About Me</title>
+</head>
+
+
+<body>
+  <header class="roboto-condensed">
+  <nav>
+    <ul class="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./aboutme.html">About Me</a></li>
+      <li><a href="./skills.html">Skills</a></li>
+      <li><a href="./contactme.html">Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="aboutme">
+    <section class="about-me">
+        <div class="about-text">
+    <h1>
+        About Me
+
+    </h1>
+
+    <p>
+        Hi, I'm Saihaan Chowdhury, a computer science student currently studying in Queens College, based in Flushing, New York.
+        I am interested in software development, critical problem solving, and using technology 
+        to create useful and efficient solutions.
+    </p>
+
+    <p>
+        I have experience with Java, Python, C++, GUI design, and Visual Studio Code. 
+        Some of my projects include a Java Roman Numeral Converter and a Tower of Hanoi program,
+        which helped me better understand recursion, algorithms, and object oriented programming
+    </p>
+
+    <p>
+        Outside of programming, I have worked as a legal assistant, where I organized
+        and translated legal documents, helped clients complete forms, and communicated with them 
+        to ensure that their documents were accurate and submitted on time. I also have tutoring experience
+        with both elementary, and middle school students, teaching them both Math, and English Language Arts. 
+    </p>
+
+    <p>
+        Outside of school, programming and my professional careers, I enjoy travelling and exploring the world. I've gone to many different countries, and have enjoyed each and every one of their cultures.
+        I also enjoy gaming and playing basketball in my own personal time as well! 
+
+    <p>
+        I am detail-oriented when it comes to building projects, and will always look for opportunities to apply my 
+        analytical and creative skills in real-world environments. 
+    </p>
+</div>
+<div class="about-image">
+    <button class="carousel-btn left-btn" onclick="previousImage()">&#10094;</button>
+    <img id="aboutImages" src="saihaanselfie.jpg" alt="Photo of Saihaan Chowdhury">
+    <button class="carousel-btn right-btn" onclick="nextImage()">&#10095;</button>
+</div>
+</section>
+
+
+
+
+</main>
+
+<script>
+    const images = [
+        "saihaanselfie.jpg",
+        "QC_Campus.jpg",
+        "lawyer.jpg",
+        "tokyo.jpg"
+    ];
+
+
+    let currentImageIndex = 0;
+
+    function showImage() {
+      const aboutImages = document.getElementById("aboutImages");
+      aboutImages.src = images[currentImageIndex];
+    }
+
+    function nextImage() {
+      currentImageIndex++;
+
+      if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+      }
+
+      showImage();
+    }
+
+    function previousImage() {
+      currentImageIndex--;
+
+      if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+      }
+
+      showImage();
+    }
+</script>
+
+</body>
