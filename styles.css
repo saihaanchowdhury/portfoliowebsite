@@ -344,3 +344,100 @@ a:hover {
   color: black;
   text-decoration: none;
 }
+
+.experience-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.experience-card {
+  background-color: black;
+  color: skyblue;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  line-height: 1.6;
+}
+
+.experience-card h3 {
+  color: white;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.home-gif {
+  width: 250px;
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+
+#darkModeBtn {
+  background-color: skyblue;
+  color: black;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#darkModeBtn:hover {
+  background-color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode header {
+  background-color: #222;
+}
+
+body.dark-mode a {
+  color: skyblue;
+}
+
+body.dark-mode a:hover {
+  color: white;
+}
+
+body.dark-mode .contact-card,
+body.dark-mode .experience-card,
+body.dark-mode .slideshow,
+body.dark-mode .project-slideshow {
+  background-color: #222;
+  color: skyblue;
+}
+
+body.dark-mode .button {
+  background-color: skyblue;
+  color: black;
+}
+
+body.dark-mode .button:hover {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .skills-section h2 {
+  color:white;
+}
